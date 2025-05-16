@@ -1,2 +1,0 @@
-# raspi
-my_raspi
