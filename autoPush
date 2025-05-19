@@ -1,3 +1,18 @@
-git add .
-git commit -m "autoPush"
+
+if [ -z "$1" ]; then
+    echo "> 전체 업로드"
+    git add .
+else
+    if [ -f "$1" ]; then
+        echo "> 파일 '$1' 업로드"
+        git add "$1"
+    else
+        echo "> 파일 '$1' 존재하지 않음"
+        exit 1
+    fi
+fi
+
+MSG=${2:-"Auto_Push"}
+
+git commit -m "$MSG"
 git push origin main
