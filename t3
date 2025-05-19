@@ -1,0 +1,17 @@
+MyName="Minsoo"
+MyNum="010-1234-1234"
+MyAddr="Korea"
+
+echo $MyName $MyNum $MyAddr
+
+# cmd a1 a2 a3
+# $$  S1 S2 S3
+
+echo "PID    : " $$
+echo "Shell  : " $0
+echo "인수 1 : " $1
+echo "인수 2 : " $2
+echo "인수 3 : " $3
+
+
+
